@@ -1,0 +1,21 @@
+.weather-result {
+  margin-top: 2rem;
+  width: 50%;
+  text-align: center;
+  padding: 0.5rem;
+  color: var(--text-color);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.weather-result h3 {
+  font-size: 1.5rem;
+}
+
+.weather-result .degrees {
+  font-size: 3.5rem;
+  font-weight: 600;
+}

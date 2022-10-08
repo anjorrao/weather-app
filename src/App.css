@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  background-image: url('./assets/clear-sky.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.App::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  z-index: -1;
+}
+
+.App.Clear {
+  background-image: url('./assets/clear-sky.jpg');
+}
+
+.App.Clouds {
+  background-image: url('./assets/clouds.jpg');
+}
+
+.App.Rain {
+  background-image: url('./assets/rainy.jpg');
+}
+
+.App.Drizzle {
+  background-image: url('./assets/drizzle.jpg');
+}
+
+.App.Snow {
+  background-image: url('./assets/snowfall.jpg');
+}
+
+.App.Thunderstorm {
+  background-image: url('./assets/thunder-storm.jpg');
+}
